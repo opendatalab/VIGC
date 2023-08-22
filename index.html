@@ -44,9 +44,15 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
+<style>
+
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+.first-row {background-color: lime; }
+.second-row { flex-grow: 1; border: none; margin: 0; padding: 0;}
+</style>
+
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -151,7 +157,9 @@
   </div>
 </section>
 
-
+<div class="row-container">
+  <iframe height="750px" src= "http://10.140.24.46:7860" class="second-row"></iframe>
+</div>
 <!-- Paper abstract -->
 <section class="section hero">
   <div class="container is-max-desktop">
