@@ -1,0 +1,6 @@
+datasets:
+  instruct_blip_okvqa_vqg:
+    data_type: images
+    build_info:
+      annotation: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/OK-VQA/process/_okvqa_train_cocoformat.json
+      images: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/OK-VQA/ori/

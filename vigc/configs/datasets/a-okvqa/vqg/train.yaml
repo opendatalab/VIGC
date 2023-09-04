@@ -1,0 +1,7 @@
+datasets:
+  instruct_blip_aokvqa_vqg:
+    data_type: images
+    build_info:
+      annotation: /mnt/petrelfs/hanxiao/working/aokvqa_processed_train.json
+#      images: cluster2:s3://mllm-data-alg/COCO2017
+      images: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/COCO2017

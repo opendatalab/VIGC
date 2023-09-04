@@ -1,0 +1,12 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+datasets:
+  instruct_blip_llava_conv_vqg:
+    data_type: images
+    build_info:
+#      annotation: /mnt/petrelfs/share_data/zhonghuaping.p/datasets/LLaVA/process/conversation_58k_cocoformat.json
+      images: /mnt/petrelfs/share_data/zhaozhiyuan/llava-150k/
+      annotation: /mnt/petrelfs/hanxiao/working/llava_process/llava_conversation_cocoformat_train.json

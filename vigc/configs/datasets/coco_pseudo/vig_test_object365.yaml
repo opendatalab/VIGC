@@ -1,0 +1,8 @@
+datasets:
+  instruct_blip_object365_vig_test:
+    data_type: images
+    build_info:
+      image_ids: /mnt/petrelfs/hanxiao/working/coco_filter_ids.json
+      # annotation: /mnt/petrelfs/share_data/wangbin/mllm/vigc/data/object365/obj365_30k.json
+      annotation: /mnt/petrelfs/share_data/wangbin/mllm/vigc/data/object365/obj365_100k.json
+      images: /mnt/petrelfs/share_data/wangbin/mllm/data/Objects365/

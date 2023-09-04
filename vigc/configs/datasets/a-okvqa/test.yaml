@@ -1,0 +1,7 @@
+datasets:
+  instruct_blip_aokvqa_test:
+    data_type: images
+    build_info:
+      annotation: /mnt/petrelfs/pengjiahui/code_github/LAVIS/AOK-VQA/aokvqa_v1p0_test.json
+#      images: cluster2:s3://mllm-data-alg/COCO2017
+      images: /mnt/petrelfs/share_data/pengjiahui/

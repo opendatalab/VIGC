@@ -1,0 +1,6 @@
+datasets:
+  instruct_blip_vqav2_vqg:
+    data_type: images
+    build_info:
+      annotation: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/VQAv2/process/VQAv2_train_cocoformat.json
+      images: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/VQAv2/process/

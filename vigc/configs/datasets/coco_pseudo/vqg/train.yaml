@@ -1,0 +1,6 @@
+datasets:
+  instruct_blip_coco_pseudo_vqg:
+    data_type: images
+    build_info:
+      images: /mnt/petrelfs/share_data/zhaozhiyuan/InstructBLIP/COCO2017/
+      image_ids: /mnt/petrelfs/hanxiao/working/coco_filter_ids.json
