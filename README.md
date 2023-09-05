@@ -203,4 +203,4 @@ If you're using VIGC in your research or applications, please cite using this Bi
 If you have any questions, comments or suggestions, please do not hesitate to contact us at wangbin@pjlab.org.cn or wufan@pjlab.org.cn.
 
 ## License
-[BSD 3-Clause License](LICENSE.txt)
+[Apache License 2.0](LICENSE.txt)
