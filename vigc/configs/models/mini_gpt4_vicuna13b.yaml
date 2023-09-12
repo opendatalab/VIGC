@@ -5,8 +5,8 @@ model:
   load_finetuned: True
   load_pretrained: True
 
-  pretrained: "/mnt/petrelfs/hanxiao/input/instruct-blip/blip2_pretrained_flant5xxl.pth"
-  finetuned: "/mnt/petrelfs/hanxiao/input/instruct-blip/minigpt4_proj_13b.pth"
+  pretrained: "path/to/pretrained/weight"
+  finetuned: "path/to/finetuned/weight"
 
   # vit encoder
   image_size: 224
@@ -19,7 +19,7 @@ model:
   num_query_token: 32
 
   # path to Vicuna checkpoint
-  llm_model: "/mnt/petrelfs/hanxiao/vicuna-13b"
+  llm_model: "path/to/vicuna/weight"
 
   # generation configs
   prompt: ""

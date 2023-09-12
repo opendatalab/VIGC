@@ -6,7 +6,7 @@ model:
   load_pretrained: True
 
 #  pretrained: "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth"
-  pretrained: "/mnt/petrelfs/hanxiao/input/instruct-blip/instruct_blip_vicuna7b_trimmed.pth"
+  pretrained: "path/to/pretrained/weight"
   finetuned: ""
 
   # vit encoder
@@ -20,7 +20,7 @@ model:
   num_query_token: 32
 
   # path to Vicuna checkpoint
-  llm_model: "/mnt/petrelfs/hanxiao/vicuna-7b"
+  llm_model: "path/to/vicuna/weight"
 
   # generation configs
   prompt: ""
