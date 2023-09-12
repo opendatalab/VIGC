@@ -8,11 +8,11 @@ MODEL_NAME = "blip2_vicuna_instruct"
 
 MODEL_CKPT = {
     "minigpt4": {
-        "finetuned": "/mnt/petrelfs/share_data/wangbin/mllm/vigc/models/minigpt4_7b_d3e4.pth",
-        "pretrained": "/mnt/petrelfs/hanxiao/input/instruct-blip/blip2_pretrained_flant5xxl.pth"},
+        "finetuned": "/path/to/finetuned/minigpt4/weight",
+        "pretrained": "/path/to/pretrained/minigpt4/weight"},
     "instruct_blip": {
-        "finetuned": "/mnt/petrelfs/share_data/wangbin/mllm/vigc/models/bak_0805/instruct-blip_7b_best.pth",
-        "pretrained": "/mnt/petrelfs/hanxiao/input/instruct-blip/instruct_blip_vicuna7b_trimmed.pth"},
+        "finetuned": "/path/to/finetuned/instruct_blip/weight",
+        "pretrained": "/path/to/pretrained/instruct_blip/weight"},
 }
 
 VIGA_INSTRUCTIONS = {
