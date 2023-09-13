@@ -1,7 +1,7 @@
 model:
   arch: blip2_vicuna_instruct
   model_type: vicuna7b
-  pretrained: "/mnt/petrelfs/hanxiao/input/instruct-blip/earlier_stage/20230627180/checkpoint_best.pth"
+  pretrained: "path/to/your/pretrained/weight"
 
 datasets:
   instruct_blip_coco2017_vig_test: # name of the dataset builder
@@ -32,7 +32,7 @@ run:
   max_iters: 60000
 
   seed: 42
-  output_dir: "/mnt/petrelfs/hanxiao/input/instruct-blip/generate/result"
+  output_dir: "output/instruct-blip/generate/result"
 
   evaluate: True
   test_splits: [ "eval" ]

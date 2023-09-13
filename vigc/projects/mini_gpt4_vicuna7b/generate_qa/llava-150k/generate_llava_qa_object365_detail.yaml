@@ -1,7 +1,7 @@
 model:
   arch: blip2_vicuna_instruct
   model_type: minigpt4_vicuna7b
-  finetuned: "/mnt/petrelfs/share_data/wangbin/mllm/vigc/models/minigpt4_7b_best.pth"
+  finetuned: "path/to/your/pretrained/weight"
 
 datasets:
   instruct_blip_object365_vig_test: # name of the dataset builder
@@ -32,7 +32,7 @@ run:
   max_iters: 60000
 
   seed: 42
-  output_dir: "./result/minigpt4_7b_llava/detail_object365_100k_test"
+  output_dir: "output/result/minigpt4_7b_llava/detail_object365_100k_test"
 
   evaluate: True
   test_splits: [ "eval" ]

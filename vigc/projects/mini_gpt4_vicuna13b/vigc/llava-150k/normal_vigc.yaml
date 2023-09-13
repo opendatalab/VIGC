@@ -107,7 +107,7 @@ run:
   accum_grad_iters: 2
 
   seed: 42
-  output_dir: "/mnt/petrelfs/hanxiao/input/vig/result"
+  output_dir: "output/vig/result"
 
   amp: True
   resume_ckpt_path: null
