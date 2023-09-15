@@ -102,20 +102,21 @@ class VQAv2_VIG_EvalDataset(OKVQA_VIG_EvalDataset):
 
 class COCO2017_Eval_Dataset(A_OKVQA_VIG_EvalDataset):
 
-    def __init__(self, vis_processor, text_processor, vis_root, anno_file, image_ids_file, filter):
+    def __init__(self, vis_processor, text_processor, vis_root, anno_file, image_ids_file=None, filter=None):
         super().__init__(vis_processor, text_processor, vis_root, anno_file)
-        image_ids = json.load(open(image_ids_file))
-        _filter_image_ids = {k: v for k, v in image_ids.items() if k in filter}
-        filter_image_ids = []
-        for ids in _filter_image_ids.values():
-            filter_image_ids.extend(ids)
-        self.filter_image_ids = set(filter_image_ids)
-        filtered_samples = []
+        image_ids = json.load(open(image_ids_file)) if image_ids_file is not None else None
+        if image_ids is not None and filter is not None:
+            _filter_image_ids = {k: v for k, v in image_ids.items() if k in filter}
+            filter_image_ids = []
+            for ids in _filter_image_ids.values():
+                filter_image_ids.extend(ids)
+            self.filter_image_ids = set(filter_image_ids)
+            filtered_samples = []
 
-        for sample in self.samples:
-            if sample["image_id"] not in filter_image_ids:
-                filtered_samples.append(sample)
-        self.samples = filtered_samples
+            for sample in self.samples:
+                if sample["image_id"] not in filter_image_ids:
+                    filtered_samples.append(sample)
+            self.samples = filtered_samples
 
     def __getitem__(self, index):
         ann = self.samples[index]
@@ -139,20 +140,21 @@ class COCO2017_Eval_Dataset(A_OKVQA_VIG_EvalDataset):
 
 class Object365_Eval_Dataset(A_OKVQA_VIG_EvalDataset):
 
-    def __init__(self, vis_processor, text_processor, vis_root, anno_file, image_ids_file, filter):
+    def __init__(self, vis_processor, text_processor, vis_root, anno_file, image_ids_file=None, filter=None):
         super().__init__(vis_processor, text_processor, vis_root, anno_file)
-        image_ids = json.load(open(image_ids_file))
-        _filter_image_ids = {k: v for k, v in image_ids.items() if k in filter}
-        filter_image_ids = []
-        for ids in _filter_image_ids.values():
-            filter_image_ids.extend(ids)
-        self.filter_image_ids = set(filter_image_ids)
-        filtered_samples = []
+        image_ids = json.load(open(image_ids_file)) if image_ids_file is not None else None
+        if image_ids is not None and filter is not None:
+            _filter_image_ids = {k: v for k, v in image_ids.items() if k in filter}
+            filter_image_ids = []
+            for ids in _filter_image_ids.values():
+                filter_image_ids.extend(ids)
+            self.filter_image_ids = set(filter_image_ids)
+            filtered_samples = []
 
-        for sample in self.samples:
-            if sample["image_id"] not in filter_image_ids:
-                filtered_samples.append(sample)
-        self.samples = filtered_samples
+            for sample in self.samples:
+                if sample["image_id"] not in filter_image_ids:
+                    filtered_samples.append(sample)
+            self.samples = filtered_samples
 
     def __getitem__(self, index):
         ann = self.samples[index]
