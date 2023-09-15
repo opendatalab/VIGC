@@ -79,7 +79,7 @@ class COCOPseudoEvalBuilder(BaseDatasetBuilder):
         build_info = self.config.build_info
         filter_dataset = self.config.get("filter", [])
         anno_path = build_info.annotation,
-        image_id_path = build_info.image_ids
+        image_id_path = build_info.get("image_ids", None)
         vis_root = build_info.images
 
         datasets = dict()
@@ -113,7 +113,7 @@ class COCOPseudoEvalBuilder(BaseDatasetBuilder):
         build_info = self.config.build_info
         filter_dataset = self.config.get("filter", [])
         anno_path = build_info.annotation,
-        image_id_path = build_info.image_ids
+        image_id_path = build_info.get("image_ids", None)
         vis_root = build_info.images
 
         datasets = dict()

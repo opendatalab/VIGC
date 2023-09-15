@@ -2,6 +2,6 @@ datasets:
   instruct_blip_object365_vig_test:
     data_type: images
     build_info:
-      image_ids: path/to/json
+#      image_ids: path/to/json
       annotation: path/to/json
       images: path/to/image/folder
