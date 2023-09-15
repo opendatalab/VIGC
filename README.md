@@ -77,6 +77,8 @@ We propose **Visual Instruction Generation and Correction (VIGC)**, a framework 
    - ckpt_minigpt4: The checkpoint file of the Mini-GPT4 model
    - ckpt_instruct_blip: The checkpoint file of the Instruct Blip model
 
+​	You can also  visit [<img src=".imgs/openxlab_logo.svg" width=15% height=15%>](https://openxlab.org.cn/apps/detail/hanxiao/VIGC) to play with VIGC online demo.
+
 ## Tutorials
 
 
