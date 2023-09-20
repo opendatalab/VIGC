@@ -57,7 +57,7 @@ We propose **Visual Instruction Generation and Correction (VIGC)**, a framework 
    minigpt-4 | [Download](https://drive.google.com/file/d/1HihQtCEXUyBM1i9DQbaK934wW3TZi-h5/view?usp=share_link) | [Download](https://drive.google.com/file/d/1u9FRRBB3VovP1HxCAlpD9Lw4t4P6-Yq8/view?usp=share_link) 
    instrucblip | [Download](https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth) | [Download](https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna13b_trimmed.pth)
 
-   After download the pretrained checkpoints, please modify the `finetuned` in [Model Config](vigc/configs/models/mini_gpt4_vicuna13b.yaml) to the folder that contains pretrian weights.
+   After download the pretrained checkpoints, please modify the `pretrained` in [Model Config](vigc/configs/models/mini_gpt4_vicuna13b.yaml) to the folder that contains pretrain weights.
 
 3. download fintuned vigc model
 
