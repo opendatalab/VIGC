@@ -71,11 +71,18 @@ We propose **Visual Instruction Generation and Correction (VIGC)**, a framework 
 
 ### Launching Demo
 
-   To Launch a demo locally, run ```bash vigc_demo.sh``` and then follow the instruction on the prompts to view in browser. Arguments are as follows:
-   - device0: The gpu id of the first model
-   - device1: The gpu id of the second model
-   - ckpt_minigpt4: The checkpoint file of the Mini-GPT4 model
-   - ckpt_instruct_blip: The checkpoint file of the Instruct Blip model
+   To Launch a demo locally, you should:
+
+1. Download the pretrain weight and finetune weight of minigpt-4 and instructblip to local;
+
+2. Update `MODEL_CKPT` in line 9 of `vigc_demo.py`；
+
+3. Run ```python vigc_demo.py``` and then follow the instruction on the prompts to view in browser. Arguments are as follows:
+
+      - device0: The gpu id of the first model
+
+      - device1: The gpu id of the second model
+
 
 ​	You can also  visit [![Open in OpenXLab](./assets/openxlab_logo.svg)](https://openxlab.org.cn/apps/detail/hanxiao/VIGC) to play with VIGC online demo.
 
